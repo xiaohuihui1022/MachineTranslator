@@ -1,5 +1,4 @@
-// 参考文献：https://zhuanlan.zhihu.com/p/81945858
-using System;
+﻿using System;
 using System.Text;
 using System.Net;
 using System.IO;

@@ -31,6 +31,7 @@
             this.button1 = new System.Windows.Forms.Button();
             this.origin = new System.Windows.Forms.TextBox();
             this.result = new System.Windows.Forms.TextBox();
+            this.status = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // button1
@@ -60,18 +61,29 @@
             this.result.Size = new System.Drawing.Size(547, 525);
             this.result.TabIndex = 2;
             // 
+            // status
+            // 
+            this.status.AutoSize = true;
+            this.status.Location = new System.Drawing.Point(12, 12);
+            this.status.Name = "status";
+            this.status.Size = new System.Drawing.Size(96, 28);
+            this.status.TabIndex = 3;
+            this.status.Text = "status";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(14F, 28F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1244, 700);
+            this.Controls.Add(this.status);
             this.Controls.Add(this.result);
             this.Controls.Add(this.origin);
             this.Controls.Add(this.button1);
             this.Font = new System.Drawing.Font("黑体", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.Margin = new System.Windows.Forms.Padding(5);
             this.Name = "Form1";
             this.Text = "Goodest Translater";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form1_FormClosing);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -82,6 +94,7 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.TextBox origin;
         private System.Windows.Forms.TextBox result;
+        private System.Windows.Forms.Label status;
     }
 }
 
