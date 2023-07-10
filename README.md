@@ -1,2 +1,2 @@
 # MachineTranslator
-A translato that are the goodest
+A translator that are the goodest
